@@ -1,0 +1,195 @@
+#form-app {
+	width: 34rem;
+	padding: 2rem 1.5rem;
+	background: rgb(125 99 164 / 13%);
+	/* box-shadow: 0 9px 40px 0 rgba(31, 38, 135, 0.37); */
+	backdrop-filter: blur(11.5px);
+	-webkit-backdrop-filter: blur(13.5px);
+	border-radius: 10px;
+	/* border: 1px solid rgba(255, 255, 255, 0.18); */
+	color: white;
+	font-family: "Bai Jamjuree", sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#form-app h1 {
+	margin-top: 1rem;
+	color: rgba(255, 230, 230, 0.7);
+	font-weight: 600;
+	font-size: 1.9rem;
+	text-shadow: 3px 2px 1px rgb(65 68 130 / 70%),
+		4px 3px 1px rgb(145 135 189 / 90%), 2px 2px 1px rgba(111, 92, 92, 0.7),
+		5px 3px 1px rgba(225, 220, 220, 0.4);
+}
+
+.form-container {
+	margin: 2rem;
+}
+
+.form-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-info {
+	display: inline-block;
+	margin: 0 2rem;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	font-weight: 500;
+}
+
+/* .user-info:first-of-type {
+	margin-top: 0;
+	margin-right: 2px;
+} */
+
+.form-input {
+	display: flex;
+	align-items: center;
+	padding: 0.6rem 0;
+	margin: 0.8rem 0;
+	border-radius: 10px;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.form-input span {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height: 1.1rem;
+	margin-left: 1.2rem;
+	font-size: 1.6rem;
+	color: var(--color-primary);
+	opacity: 0.6;
+	text-shadow: 2px 2px 7px black;
+}
+
+input,
+textarea {
+	margin: 0;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1rem;
+	height: 100%;
+	/* border-radius: 10px; */
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-weight: 600;
+}
+
+textarea {
+	height: 2.2rem;
+	resize: none;
+}
+
+textarea::placeholder {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 1000px #fff inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	flex-grow: 2;
+}
+
+input[type="submit"],
+input[type="button"] {
+	width: 100%;
+	cursor: pointer;
+	padding: 0.9rem 2rem;
+	border: none;
+	border-radius: 10px;
+	color: rgba(255, 255, 255, 0.9);
+	margin-bottom: 10px;
+	background: rgba(30, 0, 53, 0.5);
+	box-shadow: 2px 4px 9px 2px rgba(17, 19, 52, 0.37);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 10px;
+	font-weight: bold;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	transition: all;
+	transition-duration: 0.33s;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+	box-shadow: 4px 6px 9px 4px rgba(17, 19, 52, 0.4);
+	transform: scale(0.98);
+	background: rgba(30, 0, 53, 0.48);
+	/* Reduce the size by 5% on hover */
+}
+
+input[type="submit"]:disabled {
+	opacity: 0.3;
+	border: none;
+	color: rgb(128, 128, 128, 0.6);
+	padding: 0.9rem 2rem;
+	border: 2px solid rgba(255, 255, 255, 0.14);
+}
+
+.error-message {
+	text-transform: capitalize;
+	/* float: left; */
+	color: rgb(255, 139, 139);
+	font-size: 0.85rem;
+	padding: 0 1rem;
+	font-weight: 600;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+.submit-confirm {
+	display: flex;
+	justify-content: center;
+	text-transform: capitalize;
+}
+
+.submit-confirm div {
+	font-size: large;
+}
+
+.email-submit-container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.email-submit {
+	padding: 0 70px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0.9rem;
+	letter-spacing: 1.4px;
+	font-weight: bold;
+	color: var(--color-light);
+}
